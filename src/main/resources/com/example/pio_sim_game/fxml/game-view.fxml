@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@../css/game-style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pio_sim_game.controllers.GameController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Line endX="81.0" endY="-121.0" layoutX="319.0" layoutY="191.0" startX="-119.0" startY="159.0" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="328.0" endY="-186.0" layoutX="417.0" layoutY="256.0" startX="-17.0" startY="-186.0" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="-102.0" endY="370.0" layoutX="502.0" layoutY="260.0" startX="-302.0" startY="90.0" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="134.0" endY="308.0" layoutX="611.0" layoutY="322.0" startX="-210.29290771484375" startY="308.70709228515625" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="311.0" endY="-55.0" layoutX="634.0" layoutY="405.0" startX="111.7071533203125" startY="224.29290771484375" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="242.0" endY="39.0" layoutX="703.0" layoutY="311.0" startX="42.5" startY="-241.5" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="444.7071533203125" endY="91.70709228515625" layoutX="501.0" layoutY="259.0" startX="-301.0" startY="91.0" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="25.0" endY="390.29290771484375" layoutX="375.0" layoutY="239.0" startX="25.70709228515625" startY="-169.7071075439453" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="385.0" endY="-216.0" layoutX="360.0" layoutY="286.0" startX="-160.0" startY="64.0" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="207.7071533203125" endY="397.29290771484375" layoutX="538.0" layoutY="232.0" startX="-338.70709228515625" startY="118.70709228515625" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="198.7071533203125" endY="351.29290771484375" layoutX="547.0" layoutY="278.0" startX="-147.5" startY="-207.5" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="291.0" endY="89.0" layoutX="654.0" layoutY="261.0" startX="-252.5858154296875" startY="-192.41421508789062" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="172.0" endY="-346.0" layoutX="573.0" layoutY="416.0" startX="-173.0" startY="213.29290771484375" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="372.0" endY="-65.0" layoutX="573.0" layoutY="415.0" startX="-173.0" startY="214.29290771484375" strokeWidth="2.0" styleClass="line" />
+                  <Line endX="37.0" endY="-258.0" layoutX="708.0" layoutY="328.0" startX="37.7071533203125" startY="301.29290771484375" strokeWidth="2.0" styleClass="line" />
+                  <Circle fill="DODGERBLUE" layoutX="400.0" layoutY="70.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="745.0" layoutY="70.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="200.0" layoutY="350.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="945.0" layoutY="350.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="400.0" layoutY="630.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="745.0" layoutY="630.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <GridPane styleClass="scoreboard">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="playerName1" styleClass="player-name" text="Gracz 1" GridPane.halignment="CENTER" />
+                  <Label fx:id="playerName2" styleClass="player-name" text="Gracz 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <Pane fx:id="playerColor1" prefHeight="200.0" prefWidth="200.0" styleClass="player-color" GridPane.rowIndex="1" />
+                  <Pane fx:id="playerColor2" prefHeight="200.0" prefWidth="200.0" styleClass="player-color" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="playerScore1" styleClass="player-score" text="Wynik 1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <Label fx:id="playerScore2" styleClass="player-score" text="Wynik 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="bottom-menu">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onResetButtonClick" text="Reset" />
+            <Button mnemonicParsing="false" onAction="#onCloseButtonClick" text="Zakończ" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

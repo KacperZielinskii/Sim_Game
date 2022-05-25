@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<VBox prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pio_sim_game.controllers.GameController">
    <children>
       <AnchorPane VBox.vgrow="ALWAYS" />
       <GridPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: black;">

@@ -11,12 +11,11 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@../css/game-style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pio_sim_game.controllers.GameController">
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
          <children>
-            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+            <Pane fx:id="game" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
                <children>
                   <Line endX="81.0" endY="-121.0" layoutX="319.0" layoutY="191.0" startX="-119.0" startY="159.0" strokeWidth="2.0" styleClass="line" />
                   <Line endX="328.0" endY="-186.0" layoutX="417.0" layoutY="256.0" startX="-17.0" startY="-186.0" strokeWidth="2.0" styleClass="line" />
@@ -35,10 +34,10 @@
                   <Line endX="37.0" endY="-258.0" layoutX="708.0" layoutY="328.0" startX="37.7071533203125" startY="301.29290771484375" strokeWidth="2.0" styleClass="line" />
                   <Circle fill="DODGERBLUE" layoutX="400.0" layoutY="70.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fill="DODGERBLUE" layoutX="745.0" layoutY="70.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="200.0" layoutY="350.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fill="DODGERBLUE" layoutX="945.0" layoutY="350.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="400.0" layoutY="630.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fill="DODGERBLUE" layoutX="745.0" layoutY="630.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="400.0" layoutY="630.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="200.0" layoutY="350.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
                </children>
             </Pane>
             <GridPane styleClass="scoreboard">

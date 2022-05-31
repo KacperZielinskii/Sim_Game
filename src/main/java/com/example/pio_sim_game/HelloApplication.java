@@ -5,6 +5,7 @@ package com.example.pio_sim_game;
 import com.example.pio_sim_game.controllers.ColorController;
 import com.example.pio_sim_game.controllers.GameController;
 import com.example.pio_sim_game.controllers.MenuController;
+import com.example.pio_sim_game.models.GameModel;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -27,8 +28,12 @@ public class HelloApplication extends Application {
         Scene gameScene = new Scene(gameLoader.load(), 1280, 800);
         GameController gameController = gameLoader.getController();
 
+        GameModel gameModel = new GameModel();
+        colorController.initModel(gameModel);
+        gameController.initModel(gameModel);
 
-
+        menuController.setNextScene(colorScene);
+        colorScene.setNextScene(gameScene);
 
         stage.setTitle("Sim Game");
         stage.setScene(menuScene);

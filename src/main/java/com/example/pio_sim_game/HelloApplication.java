@@ -33,7 +33,7 @@ public class HelloApplication extends Application {
         gameController.initModel(gameModel);
 
         menuController.setNextScene(colorScene);
-        colorScene.setNextScene(gameScene);
+        colorController.setNextScene(gameScene);
 
         stage.setTitle("Sim Game");
         stage.setScene(menuScene);

@@ -6,6 +6,7 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.ColorPicker;
 import javafx.stage.Stage;
 
 public class ColorController {
@@ -13,8 +14,16 @@ public class ColorController {
     private GameModel model;
     private Scene scene;
 
+    @FXML private ColorPicker playerColor1;
+    @FXML private ColorPicker playerColor2;
+
     public void initModel(GameModel model) {
         this.model = model;
+
+        playerColor1.valueProperty().bind(this.model.playerColor1Property());
+        playerColor2.valueProperty().bind(this.model.playerColor2Property());
+
+        //Nazwy graczy
     }
 
     public void setNextScene(Scene scene) {
@@ -25,5 +34,6 @@ public class ColorController {
     {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
+        //initGame
     }
 }

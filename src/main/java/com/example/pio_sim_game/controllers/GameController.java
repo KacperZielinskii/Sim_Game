@@ -5,6 +5,7 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 
 import java.util.ArrayList;
@@ -27,6 +28,9 @@ public class GameController {
 
     public void initModel(GameModel model) {
         this.model = model;
+
+        playerScore1.textProperty().bind(this.model.playerScore1Property());
+        playerScore2.textProperty().bind(this.model.playerScore2Property());
     }
 
     @FXML

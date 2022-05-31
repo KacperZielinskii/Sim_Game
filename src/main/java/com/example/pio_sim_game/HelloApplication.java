@@ -16,15 +16,15 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader menuLoader = new FXMLLoader(HelloApplication.class.getResource("SIMMenu.fxml"));
+        FXMLLoader menuLoader = new FXMLLoader(HelloApplication.class.getResource("fxml/SIMMenu.fxml"));
         Scene menuScene = new Scene(menuLoader.load(), 1280, 800);
         MenuController menuController = menuLoader.getController();
 
-        FXMLLoader colorLoader = new FXMLLoader(HelloApplication.class.getResource("colorSelection.fxml"));
+        FXMLLoader colorLoader = new FXMLLoader(HelloApplication.class.getResource("fxml/colorSelection.fxml"));
         Scene colorScene = new Scene(colorLoader.load(), 1280, 800);
         ColorController colorController = colorLoader.getController();
 
-        FXMLLoader gameLoader = new FXMLLoader(HelloApplication.class.getResource("game-view.fxml"));
+        FXMLLoader gameLoader = new FXMLLoader(HelloApplication.class.getResource("fxml/game-view.fxml"));
         Scene gameScene = new Scene(gameLoader.load(), 1280, 800);
         GameController gameController = gameLoader.getController();
 

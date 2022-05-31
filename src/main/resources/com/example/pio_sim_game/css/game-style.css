@@ -27,6 +27,7 @@
 
 .line {
     -fx-stroke: lightgrey;
+    -fx-stroke-width: 10;
 }
 
 .bottom-menu {

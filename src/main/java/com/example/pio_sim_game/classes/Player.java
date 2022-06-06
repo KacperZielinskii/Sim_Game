@@ -1,6 +1,6 @@
 package com.example.pio_sim_game.classes;
 
-public class Player {
+public class  Player {
     private Integer ID;
     private String color;
 

@@ -38,14 +38,18 @@ public class GameController {
                     public void handle(MouseEvent mouseEvent) {
                         int id = finalI;
                         int currentPlayerID = model.getCurrentPlayerID();
-                        if(currentPlayerID == 1) {
-                            ((Line)mouseEvent.getSource()).setStyle("-fx-stroke: red");
+                        if(model.isEmpty(id))
+                        {
+                            if (currentPlayerID == 1)
+                            {
+                                ((Line) mouseEvent.getSource()).setStyle("-fx-stroke: red");
+                            } else
+                            {
+                                ((Line) mouseEvent.getSource()).setStyle("-fx-stroke: blue");
+                            }
+                            model.round(id);
+                            mouseEvent.consume();
                         }
-                        else {
-                            ((Line)mouseEvent.getSource()).setStyle("-fx-stroke: blue");
-                        }
-                        model.round(id);
-                        mouseEvent.consume();
                     }
                 });
             }

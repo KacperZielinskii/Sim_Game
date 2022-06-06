@@ -141,6 +141,13 @@ public class GameModel {
         return false;
     }
 
+    public boolean isEmpty(int id)
+    {
+        Point fir = myLines.get(id).getPoint1();
+        Point sec = myLines.get(id).getPoint2();
+        return !(points[fir.getPoint()].getConnection()[sec.getPoint()] && points[sec.getPoint()].getConnection()[fir.getPoint()]);
+    }
+
     private void connectThePoints(Point fir, Point sec, int player)
     {
         points[fir.getPoint()].getConnection()[sec.getPoint()] = true;

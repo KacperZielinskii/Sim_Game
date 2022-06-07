@@ -1,19 +1,19 @@
 .button {
     -fx-padding: 10px;
-    -fx-background-color: grey;
-    -fx-text-fill: white;
-    -fx-font-size: 20px;
-    -fx-border-style: solid;
-    -fx-background-radius: 10px;
-    -fx-border-radius: 10px;
+    -fx-background-color: #595775;
+    -fx-text-fill: #F1E0D6;
+    -fx-font-size: 30px;
+    -fx-background-radius: 5px;
 }
 
 .player-name {
     -fx-font-size: 24px;
+    -fx-text-fill: black;
 }
 
 .player-score {
     -fx-font-size: 36px;
+    -fx-text-fill: black;
 }
 
 .player-color {
@@ -22,16 +22,25 @@
 
 .scoreboard {
     -fx-border-style: solid;
-    -fx-border-color: grey;
+    -fx-border-color: #595775;
+    -fx-border-width: 5px;
+    -fx-background-color: #ABA6BF;
 }
 
 .line {
-    -fx-stroke: lightgrey;
+    -fx-stroke: #ABA6BF;
     -fx-stroke-width: 10;
+}
+
+.game-background{
+    -fx-background-color: #F1E0D6;
 }
 
 .bottom-menu {
     -fx-padding: 20px;
     -fx-spacing: 20px;
     -fx-border-style: solid;
+    -fx-border-color: #595775;
+    -fx-border-width: 5px;
+    -fx-background-color: #ABA6BF;
 }

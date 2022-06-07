@@ -21,7 +21,7 @@
 }
 
 .scoreboard {
-    -fx-border-style: solid;
+    -fx-border-style: solid solid none solid;
     -fx-border-color: #595775;
     -fx-border-width: 5px;
     -fx-background-color: #ABA6BF;

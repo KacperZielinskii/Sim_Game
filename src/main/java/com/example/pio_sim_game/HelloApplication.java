@@ -1,7 +1,5 @@
 package com.example.pio_sim_game;
 
-//Do usuniecia
-
 import com.example.pio_sim_game.controllers.ColorController;
 import com.example.pio_sim_game.controllers.GameController;
 import com.example.pio_sim_game.controllers.MenuController;
@@ -9,6 +7,7 @@ import com.example.pio_sim_game.models.GameModel;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -35,6 +34,7 @@ public class HelloApplication extends Application {
         menuController.setNextScene(colorScene);
         colorController.setNextScene(gameScene);
 
+        stage.getIcons().add(new Image(HelloApplication.class.getResourceAsStream("img/icon.png")));
         stage.setTitle("Sim Game");
         stage.setScene(menuScene);
         stage.show();

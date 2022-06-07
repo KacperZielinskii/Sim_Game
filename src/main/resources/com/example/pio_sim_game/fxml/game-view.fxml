@@ -47,16 +47,13 @@
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
               </rowConstraints>
                <children>
                   <Label fx:id="playerName1" styleClass="player-name" text="Gracz 1" GridPane.halignment="CENTER" />
                   <Label fx:id="playerName2" styleClass="player-name" text="Gracz 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                  <Pane fx:id="playerColor1" prefHeight="200.0" prefWidth="200.0" styleClass="player-color" GridPane.rowIndex="1" />
-                  <Pane fx:id="playerColor2" prefHeight="200.0" prefWidth="200.0" styleClass="player-color" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label fx:id="playerScore1" styleClass="player-score" text="Wynik 1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                  <Label fx:id="playerScore2" styleClass="player-score" text="Wynik 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <Label fx:id="playerScore1" styleClass="player-score" text="Wynik 1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                  <Label fx:id="playerScore2" styleClass="player-score" text="Wynik 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
                </children>
             </GridPane>
          </children>

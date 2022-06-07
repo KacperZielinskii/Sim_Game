@@ -43,7 +43,7 @@ public class GameModel {
         score1 = 0;
         score2 = 0;
 
-        defaultColor = "#abcdef";
+        defaultColor = "#ABA6BF";
 
         playerScore1 = new SimpleStringProperty();
         playerScore2 = new SimpleStringProperty();

@@ -1,0 +1,30 @@
+.button {
+    -fx-padding: 10px;
+    -fx-background-color: #595775;
+    -fx-text-fill: #F1E0D6;
+    -fx-font-size: 30px;
+    -fx-background-radius: 5px;
+}
+
+.color-pick-background{
+    -fx-background-color: #ABA6BF;
+}
+
+.color-pick-window{
+    -fx-background-color: #F1E0D6;
+    -fx-border-style: solid;
+    -fx-border-width: 8px;
+    -fx-border-color: #595775;
+}
+
+.player-label{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.sim-label{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 40px;
+}

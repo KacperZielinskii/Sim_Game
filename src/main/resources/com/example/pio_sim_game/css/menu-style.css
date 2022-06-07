@@ -1,0 +1,22 @@
+.button {
+    -fx-padding: 10px;
+    -fx-background-color: #595775;
+    -fx-text-fill: #F1E0D6;
+    -fx-font-size: 30px;
+    -fx-background-radius: 5px;
+}
+
+.menu-background{
+    -fx-background-color: #F1E0D6;
+}
+
+.logo{
+    -fx-padding: 10px;
+    -fx-background-color: #F1E0D6;
+    -fx-text-fill: #595775;
+    -fx-font-size: 130px;
+    -fx-font-weight: bold;
+    -fx-border-style: solid;
+    -fx-border-width: 9px;
+    -fx-border-color: #595775;
+}

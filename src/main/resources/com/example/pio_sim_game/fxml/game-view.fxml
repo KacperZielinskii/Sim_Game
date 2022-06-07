@@ -15,7 +15,7 @@
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
          <children>
-            <Pane fx:id="game" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+            <Pane fx:id="game" prefHeight="200.0" prefWidth="200.0" styleClass="game-background" HBox.hgrow="ALWAYS">
                <children>
                   <Line endX="81.0" endY="-121.0" layoutX="319.0" layoutY="191.0" startX="-119.0" startY="159.0" strokeWidth="2.0" styleClass="line" />
                   <Line endX="328.0" endY="-186.0" layoutX="417.0" layoutY="256.0" startX="-17.0" startY="-186.0" strokeWidth="2.0" styleClass="line" />
@@ -63,8 +63,8 @@
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0" styleClass="bottom-menu">
          <children>
-            <Button mnemonicParsing="false" onAction="#onResetButtonClick" text="Reset" />
-            <Button mnemonicParsing="false" onAction="#onCloseButtonClick" text="Zakończ" />
+            <Button mnemonicParsing="false" onAction="#onResetButtonClick" text="RESET" />
+            <Button mnemonicParsing="false" onAction="#onCloseButtonClick" text="ZAKOŃCZ" />
          </children>
       </HBox>
    </children>
